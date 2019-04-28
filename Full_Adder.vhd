@@ -14,5 +14,5 @@ architecture structural of full_adder is
 begin
     sum  <= a xor b xor cin;
     cout <= (a and b) or (a and cin) or (b and cin);
-    p    <= a xor b;
+    p    <= a xor b; --Propagate Signal
 end architecture;
